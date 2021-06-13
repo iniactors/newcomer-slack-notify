@@ -1,7 +1,7 @@
 // Google Forms（入会フォーム）へのコンテナバインドで動きます
 function onFormSubmit(e) {
   let result = {}
-  const formResponses = e.response
+  let formResponses = e.response
   let time = formResponses.getTimestamp()
   result['time'] = Date.parse(time)
   result['email'] = formResponses.getRespondentEmail()
@@ -16,7 +16,7 @@ function onFormSubmit(e) {
 function sendToSlack(content, channel) {
   const URL =
     '[INCOMING_WEBHOOK_URL]'
-  const data = {
+  let data = {
     channel: channel,
     username: '入会歓迎bot',
     attachments: [
