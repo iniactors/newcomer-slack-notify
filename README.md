@@ -9,4 +9,4 @@ SlackのIncoming Webhookを使います。
 以上。
 
 ## ライセンス
-Apache-2.0 License
+Apache License 2.0
