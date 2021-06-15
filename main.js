@@ -18,7 +18,7 @@ function sendToSlack(content, channel) {
   let data = {
     channel: channel,
     username: "入会歓迎bot",
-    text: "*入会者が現れた！* :raised_hands:",
+    text: "*新規入会者が現れた！* :raised_hands:",
     attachments: [
       {
         color: "#F2D492",
